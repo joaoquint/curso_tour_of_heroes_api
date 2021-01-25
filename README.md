@@ -1,24 +1,28 @@
-# README
+Tour Of Heroes API
+Curso de Ruby on Rails 6 como API de Heroes.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Esse repositório faz parte do Curso de Ruby on Rails 6 como API.
 
-Things you may want to cover:
+Ruby version 2.7.2
+Rails version 6.1.x
+Database SQLite3
+Configurações iniciais para rodar o projeto
 
-* Ruby version
+# clonar o projeto
 
-* System dependencies
+git clone https://github.com/peimelo/curso_tour_of_heroes_api.git
+cd curso_tour_of_heroes_api
 
-* Configuration
+# instalar as dependências do Ruby on Rails
 
-* Database creation
+bundle install
 
-* Database initialization
+# criar os bancos de dados de development e test
 
-* How to run the test suite
+rails db:create
 
-* Services (job queues, cache servers, search engines, etc.)
+# criar as tabelas
 
-* Deployment instructions
-
-* ...
+rails db:migrate
+Rodar o projeto
+rails s
