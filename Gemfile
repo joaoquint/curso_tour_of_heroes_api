@@ -13,6 +13,7 @@ gem "rack-cors", "~> 1.1"
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'sqlite3', '~> 1.4'
+  gem "rspec-rails", "~> 4.0"
 end
 
 group :development do
@@ -25,3 +26,7 @@ group :production do
   gem "pg", "~> 1.2"
 end
 
+group :test do
+  gem "shoulda-matchers", "~> 4.5"
+  gem "simplecov", "~> 0.21.2", require: false
+end
