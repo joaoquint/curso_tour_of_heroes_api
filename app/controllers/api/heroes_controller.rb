@@ -7,6 +7,9 @@ class Api::HeroesController < ApplicationController
   # GET /heroes
   def index
     @heroes = Hero.by_token(@token).search(params[:term]).sorted_by_name
+
+    # logger.debug "===- TOKEN: #{@token}" debug to send for log path in development.log level
+    # logger.info "===- TOKEN: #{@token}" debug to send for log path in production.log level
     render json: @heroes
   end
 
@@ -18,6 +21,8 @@ class Api::HeroesController < ApplicationController
   # POST /heroes
   def create
     @hero = Hero.new(hero_params.to_h.merge!({ token: @token }))
+
+    # byebug: (another way to debug stoping execution and being possible to text a command.)
     if @hero.save
       render json: @hero, status: :created, location: api_hero_url(@hero)
     else
