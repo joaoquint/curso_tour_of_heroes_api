@@ -51,7 +51,7 @@ O backend fica disponível em `http://localhost:3000`.
 
 ## Testes
 
-[![CircleCI](https://circleci.com/gh/peimelo/curso_tour_of_heroes_api.svg?style=svg)](https://circleci.com/gh/peimelo/curso_tour_of_heroes_api)
+[![CircleCI](https://app.circleci.com/pipelines/github/joaoquint/curso_tour_of_heroes_api.svg?style=svg)](https://app.circleci.com/pipelines/github/joaoquint/curso_tour_of_heroes_api)
 
 Para rodar os testes:
 
