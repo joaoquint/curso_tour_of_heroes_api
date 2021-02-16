@@ -10,13 +10,14 @@ gem 'rails', '~> 6.1.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem "rack-cors", "~> 1.1"
 gem "rubocop", require: false
-gem "cucumber", "~> 5.3"
-gem "watir", "~> 6.17"
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'sqlite3', '~> 1.4'
   gem "rspec-rails", "~> 4.0"
+  gem "colorize", "~> 0.8.1"
+  gem "cucumber", "~> 5.3"
+  gem "watir", "~> 6.17"
 end
 
 group :development do
@@ -33,5 +34,6 @@ group :test do
   gem "shoulda-matchers", "~> 4.5"
   gem "simplecov", "~> 0.21.2", require: false
 end
+
 
 
