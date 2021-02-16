@@ -10,6 +10,8 @@ gem 'rails', '~> 6.1.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem "rack-cors", "~> 1.1"
 gem "rubocop", require: false
+gem "cucumber", "~> 5.3"
+gem "watir", "~> 6.17"
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -32,6 +34,4 @@ group :test do
   gem "simplecov", "~> 0.21.2", require: false
 end
 
-gem "cucumber", "~> 5.3"
 
-gem "watir", "~> 6.17"
