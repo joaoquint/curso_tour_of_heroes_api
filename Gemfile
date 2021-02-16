@@ -31,3 +31,7 @@ group :test do
   gem "shoulda-matchers", "~> 4.5"
   gem "simplecov", "~> 0.21.2", require: false
 end
+
+gem "cucumber", "~> 5.3"
+
+gem "watir", "~> 6.17"
